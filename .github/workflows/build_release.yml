@@ -1,0 +1,16 @@
+name: Trigger Codemagic Build Flutter
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  trigger-codemagic-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Codemagic build
+        uses: codemagic-ci-cd/trigger-codemagic-workflow-action@v1.0.0
+        with:
+          app-id: 65bb494558daffa13b32298f
+          workflow-id: 65bb494558daffa13b32298e
+          token: Fl6TdNoQy3SX-HgLcOLlWSzlCdB5uhhzzAQzDLe7LZU
