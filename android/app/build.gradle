@@ -63,13 +63,13 @@ android {
     flavorDimensions "SIF"
 
     productFlavors{
-        PROD{
+        prod{
             dimension "SIF"
             resValue "string", "app_name", "App Prod"
             applicationId "com.example.testflavor"
         }
 
-        DEV{
+        dev{
             dimension "SIF"
             resValue "string", "app_name", "App Dev"
             applicationId "com.example.testflavor.dev"
